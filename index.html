@@ -10,8 +10,14 @@
 <body>
     <h1 class="header--main">Discover hidden places in the world around you</h1>
     <p><a class="link--cta" href="#">Download Excursion (Coming Soon!)</a></p>
-    <video autoplay loop controls>
-        <source src="resources/videos/excursion.mp4" type="video/mp4">
+    
+    const video = document.getElementById("myVideo")
+    video.loop = true;
+    video.autoplay = true;
+    video.play();
+
+    <video id="myVideo" controls>
+        <source src="resources/videos/excursion.mp4" type="video/mp4"/>
     </video>
     <script>
         document.getElementById('vid').play();
